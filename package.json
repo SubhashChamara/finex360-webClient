@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build:uat": "next build",
-    "start:uat": "next start",
-    "build:production": "next build",
-    "start:production": "next start"
+    "build:uat": "NODE_ENV=uat next build",
+    "start:uat": "NODE_ENV=uat next start",
+    "build:production": "NODE_ENV=production next build",
+    "start:production": "NODE_ENV=production next start"
   },
   "dependencies": {
     "axios": "^1.12.2",
