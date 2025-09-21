@@ -1,0 +1,42 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .printable-area {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .printable-area .bg-gray-800 {
+    background-color: #f3f4f6 !important; /* bg-gray-100 */
+    color: black !important;
+  }
+  
+  .printable-area .text-white {
+    color: black !important;
+  }
+  
+  .printable-area .text-gray-400 {
+    color: #6b7280 !important; /* text-gray-500 */
+  }
+
+  .printable-area .grid {
+    display: block !important;
+  }
+
+  .printable-area .grid > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
