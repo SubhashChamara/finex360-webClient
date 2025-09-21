@@ -127,7 +127,7 @@ const LoginPage: NextPage = () => {
           </form>
 
           <div className="mt-6 text-center text-sm">
-            <p className="text-gray-600">Don't have an account? <a href="#" className="text-[#175eac] hover:underline">Sign Up</a></p>
+            <p className="text-gray-600">Don&apos;t have an account? <a href="#" className="text-[#175eac] hover:underline">Sign Up</a></p>
           </div>
         </div>
       </div>
