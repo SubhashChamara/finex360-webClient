@@ -6,16 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "build:uat": "cross-env NODE_ENV=uat next build",
-    "start:uat": "cross-env NODE_ENV=uat next start",
-    "build:production": "cross-env NODE_ENV=production next build",
-    "start:production": "cross-env NODE_ENV=production next start"
+    "lint": "eslint"
   },
   "dependencies": {
     "axios": "^1.12.2",
     "chart.js": "^4.5.0",
-    "dotenv": "^17.2.2",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-chartjs-2": "^5.3.0",
@@ -27,7 +22,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "cross-env": "^10.0.0",
     "dotenv-cli": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
