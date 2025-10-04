@@ -15,7 +15,7 @@ const LoginPage: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent | React.MouseEvent) => {
     e.preventDefault();
     setError(null);
     setLoading(true);
@@ -70,7 +70,7 @@ const LoginPage: NextPage = () => {
           <h2 className="mb-2 text-3xl font-bold text-gray-800 text-center">Sign in</h2>
           <p className="mb-6 text-sm text-gray-600"></p>
 
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="mb-4">
               <label htmlFor="username" className="sr-only">User Name</label>
               <input
@@ -118,7 +118,8 @@ const LoginPage: NextPage = () => {
             {error && <p className="mb-4 text-red-500">{error}</p>}
 
             <button
-              type="submit"
+              type="button"
+              onClick={handleSubmit}
               disabled={loading}
               className="w-full rounded-lg bg-[#175eac] p-3 text-lg font-semibold text-white hover:bg-[#144a8a] disabled:bg-[#4d82c2]"
             >
